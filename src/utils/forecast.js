@@ -11,7 +11,7 @@ const forecast = (lat, lng, callback) => {
     } else {
       callback(
         undefined,
-        `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degress out. There is a ${body.current.precip}% chance of rain`
+        `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degress out. There is a ${body.current.precip}% chance of rain. and the humidity is ${body.current.humidity} percent`
       );
     }
   });
